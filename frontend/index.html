@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BYU Idaho Professional Project Department Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="frontend/style.css" />
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <nav>
 
       <ul>
-        <li><a href="./pages/projects.html">Senior Projects</a></li>
+        <li><a href="./pages/projects.html">Projects</a></li>
         <li><a href="./pages/internships.html">Internships</a></li>
         <li><a href="./pages/portfolio.html">Faculty Portfolios</a></li>
         <li><a href="./pages/societies.html">Societies</a></li>
@@ -33,11 +33,11 @@
   </header>
   <main>
     <section>
-      <h2>About Our Department</h2>
+      <h2 style="color: #00008b;">Submit your Project</h2>
       <p>Explore our programs, projects, and opportunities in the Department of Professional Projects.</p>
     </section>
     <section id="overview">
-      <h2>Explore</h2>
+      <h2 style="color: #00008b;">Explore</h2>
       <p>Navigate through our key focus areas:</p>
       <ul>
         <li><strong>Senior Projects</strong>: Collaborate and innovate on capstone projects.</li>
@@ -49,7 +49,7 @@
       </ul>
     </section>
     <section>
-      <h2>Featured Projects</h2>
+      <h2 style="color: #00008b;">Featured Projects</h2>
       <div class="projects-container">
         <div class="card">
           <h3>Party of AI</h3>
@@ -111,7 +111,7 @@
     </section>
 
     <section>
-      <h2>Stay Updated with Our Events</h2>
+      <h2 style="color: #00008b;">Stay Updated With Our Events</h2>
       <p>Check back regularly to see upcoming events.</p>
     </section>
 
@@ -151,11 +151,14 @@
       </div>
     </section>
 
+          <!-- Additional project cards -->
+        </div>
+    </section>  
 
 
 
     <section>
-      <h2>Academic Advising</h2>
+      <h2 style="color: #00008b;">Academic Advising</h2>
       <p>For guidance on course selection and career planning, please contact:</p>
       <ul class="advisors-list">
         <li>
@@ -174,17 +177,20 @@
       </ul>
     </section>
     <section>
-      <h2>Internship Opportunities</h2>
+      <h2 style="color: #00008b;">Internship Opportunities</h2>
       <div class="grid-container">
-        <div class="card">
+        <div class="card">   
+                   
+          <img src="C:\Users\erosp\Documents\Repositories\Professional-Project-Department-Portfolio\assets\BYU Idaho2.jpeg" alt="Internship 1 Image" class="card-img">
+          <div class="card-content"></div>
           <h3>Internship Title 1</h3>
-          <img src="images/internship1.jpg" alt="Internship 1 Image">
           <p>Brief description of Internship 1...</p>
           <a href="internship1-details.html">Learn More</a>
         </div>
-        <div class="card">
+        <div class="card">                   
+          <img src="C:\Users\erosp\Documents\Repositories\Professional-Project-Department-Portfolio\assets\Idaho Community.jpeg" alt="Internship 2 Image" class="card-img" >
+          <div class="card-content"></div>
           <h3>Internship Title 2</h3>
-          <img src="images/internship2.jpg" alt="Internship 2 Image">
           <p>Brief description of Internship 2...</p>
           <a href="internship2-details.html">Learn More</a>
         </div>
@@ -195,7 +201,7 @@
     </section>
 
     <section id="uploadProject">
-      <h2>Submit Your Project</h2>
+      <h2 style="color: #00008b;">Submit your Project</h2>
       <form id="projectForm" enctype="multipart/form-data">
         <label for="projectTitle">Project Title:</label>
         <input type="text" id="projectTitle" name="title" required>
@@ -216,19 +222,19 @@
         <label for="projectFile">Upload Project File:</label>
         <input type="file" id="projectFile" name="file" accept=".jpg,.png,.pdf,.docx" required>
 
-        <button type="submit">Submit</button>
+        <button type="submit"><h2 style="color: #00008b;">Submit</h2>/button>
       </form>
       <p id="formMessage"></p>
     </section>
 
     <section id="portfolioDisplay">
-      <h2>View Submitted Projects</h2>
+      <h2 style="color: #00008b;">View Submitted Project</h2>
       <input type="text" id="search" placeholder="Search portfolios" oninput="filterPortfolios()">
       <div id="portfolioContainer"></div>
     </section>
 
     <section>
-      <h2>Stay Updated with Our Events</h2>
+      <h2 style="color: #00008b;">Stay Updated With Our Events</h2>
       <p>Check back regularly to see upcoming events.</p>
       <div class="grid-container">
         <div class="card">
@@ -245,17 +251,7 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2024 BYU-Idaho</p>
-  </footer>
-
-  <script>
-    function toggleDetails(event, id) {
-      event.preventDefault();
-      var details = document.getElementById(id);
-      details.style.display = details.style.display === "none" ? "block" : "none";
-    }
-
+ 
     function filterPortfolios() {
       const searchInput = document.getElementById('search').value.toLowerCase();
       const portfolioItems = document.querySelectorAll('.portfolio-item');
@@ -292,6 +288,21 @@
     }
 
     fetchProjects();
+
+    <footer>
+      <p>&copy; 2024 BYU-Idaho</p>
+    </footer>
+  
+    <script>
+      function toggleDetails(event, id) {
+        event.preventDefault();
+        var details = document.getElementById(id);
+        if (details.style.display === "none") {
+          details.style.display = "block";
+        } else {
+          details.style.display = "none";
+      }
+      }  
   </script>
 </body>
 

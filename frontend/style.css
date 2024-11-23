@@ -1,6 +1,6 @@
 /* General Styles */
 header {
-    background-image: url('https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/BYUI.jpeg?raw=true');
+    background-image: url('https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/assetsvadim-sherbakov-d6ebY-faOO0-unsplash.jpg?raw=true');
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -67,11 +67,17 @@ header {
   
   h2 {
     /* color: #002855; */
-    color:white;
+    color:rgb(19, 7, 83);
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
   
+  .card img {
+    width: 33%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+
   p {
     line-height: 1.6;
   }
@@ -114,10 +120,11 @@ header {
     padding: 0.5rem;
     margin: 0;
     font-size: 1.2rem;
+    
   }
   
   .card img {
-    width: 100%;
+    width: 33%;
     height: auto;
     border-bottom: 1px solid #ddd;
   }
@@ -187,5 +194,5 @@ header {
     background-image: url(../assets/vadim-sherbakov-d6ebY-faOO0-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
+    
   }
