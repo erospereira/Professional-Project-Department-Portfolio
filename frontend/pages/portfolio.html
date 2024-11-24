@@ -8,12 +8,10 @@
 </head>
 <body>
     <header>
-        <a href="/index.html">
-            <div class="banner">
-                <h1>Welcome to BYU-Idaho's Department of Professional Projects</h1>
-                <h2>Your gateway to Senior Projects, Internships, Portfolios, and more.</h2>
-            </div>
-        </a>
+        <div class="banner">
+            <h1>Welcome to BYU-Idaho's Department of Professional Projects</h1>
+            <h2>Your gateway to Senior Projects, Internships, Portfolios, and more.</h2>
+        </div>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -28,8 +26,24 @@
         </nav>
     </header>
     <main>
-        <h1>Faculty Portfolios</h1>
+        <!-- New section for portfolios with a search bar -->
+        <header>
+            <h2 style="color: #00008b;">My Portfolio</h2>
+            <input type="text" id="search" placeholder="Search portfolios">
+        </header>
+        <div id="portfolioContainer">
+            <div class="portfolio-item" data-year="2023" data-project-type="Senior Project">
+                <h3>Project Title</h3>
+                <p>Description...</p>
+            </div>
+            <div class="portfolio-item" data-year="2024" data-project-type="Internship">
+                <h3>Another Title</h3>
+                <p>Description...</p>
+            </div>
+        </div>
+
         <section>
+            <h1>Faculty Portfolios</h1>
             <h2>Project Submission Form for Department Website</h2>
             <p>Congratulations on completing your project! Follow the instructions below to begin the process of getting your project displayed on the Department Portfolio website.</p>
             <p><strong>Please Note:</strong></p>
@@ -128,6 +142,9 @@
             </ul>
             <h4>Additional Information</h4>
             <ul>
-                <li><strong>Future Work:</strong>
-::contentReference[oaicite:0]{index=0}
- 
+                <li><strong>Future Work:</strong> Describe potential improvements or features you plan to implement in the future.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

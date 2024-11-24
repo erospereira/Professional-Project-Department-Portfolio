@@ -233,6 +233,8 @@
       <div id="portfolioContainer"></div>
     </section>
 
+    
+
     <section>
       <h2 style="color: #00008b;">Stay Updated With Our Events</h2>
       <p>Check back regularly to see upcoming events.</p>
@@ -266,6 +268,8 @@
       });
     }
 
+  
+  </script>
     async function fetchProjects() {
       const response = await fetch('/api/get-projects');
       const projects = await response.json();
@@ -288,6 +292,7 @@
     }
 
     fetchProjects();
+  </script>
 
     <footer>
       <p>&copy; 2024 BYU-Idaho</p>
