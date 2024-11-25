@@ -196,3 +196,10 @@ header {
     background-position: center;
     
   }
+
+  nav li{
+    padding:1em;
+  }
+  .selected{
+    background-color: #3270b3;
+  }
