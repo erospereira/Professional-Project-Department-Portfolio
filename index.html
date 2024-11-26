@@ -71,7 +71,7 @@
         <div class="card">
           <h3>Idaho Museums</h3>
           <img
-            src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/Idaho%20museums.jpeg?raw=true">
+            src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/assets/Idaho%20museums.jpeg?raw=true">
           <p>The Idaho State Museum in Boise offers immersive exhibits that showcase the state's rich history and
             diverse cultures. Spanning over 80,000 square feet, the museum features more than 500 artifacts combined
             with innovative technology to tell the story of Idaho.
@@ -119,7 +119,7 @@
       <!-- Example Event Card -->
       <div class="card">
         <img
-          src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/Janalee.jpg?raw=true" />
+          src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/assets/Janalee.jpg?raw=true" />
         <div class="card-content">
           <h3>Title: Devotional - Janalee Meeker</h3>
           <p>Description: Join us for an interactive devotional.</p>
@@ -130,7 +130,7 @@
 
       <div class="card">
         <img
-          src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/Idaho%20Community.jpeg?raw=true" />
+          src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/assets/Idaho%20Community.jpeg?raw=true" />
         <div class="card-content">
           <h3>Title: Data Science Seminar</h3>
           <p>Description: An informative seminar on data science trends and technologies.</p>
@@ -141,7 +141,7 @@
 
       <div class="card">
         <img
-          src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/BYU%20Idaho2.jpeg?raw=true" />
+          src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/assets/BYU%20Idaho2.jpeg?raw=true" />
         <div class="card-content">
           <h3>Title: Networking Event</h3>
           <p>Description: Meet industry professionals and expand your network.</p>
@@ -181,14 +181,14 @@
       <div class="grid-container">
         <div class="card">   
                    
-          <img src="C:\Users\erosp\Documents\Repositories\Professional-Project-Department-Portfolio\assets\BYU Idaho2.jpeg" alt="Internship 1 Image" class="card-img">
+          <img src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/assets/Idaho%20Community.jpeg?raw=true" alt="Internship 1 Image" class="card-img">
           <div class="card-content"></div>
           <h3>Internship Title 1</h3>
           <p>Brief description of Internship 1...</p>
           <a href="internship1-details.html">Learn More</a>
         </div>
         <div class="card">                   
-          <img src="C:\Users\erosp\Documents\Repositories\Professional-Project-Department-Portfolio\assets\Idaho Community.jpeg" alt="Internship 2 Image" class="card-img" >
+          <img src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/assets/Idaho%20Community.jpeg?raw=true" alt="Internship 2 Image" class="card-img" >
           <div class="card-content"></div>
           <h3>Internship Title 2</h3>
           <p>Brief description of Internship 2...</p>
@@ -270,7 +270,7 @@
 
   
   </script>
-    async function fetchProjects() {
+    function fetchProjects() {
       const response = await fetch('/api/get-projects');
       const projects = await response.json();
       const container = document.getElementById('portfolioContainer');
