@@ -1,0 +1,37 @@
+name: Build and Deploy Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        pip install markdown
+
+    - name: Convert Markdown to HTML
+      run: |
+        mkdir -p _site/categories
+        for file in categories/*.md; do
+          output="_site/${file%.md}.html"
+          python -c "import markdown, sys; print(markdown.markdown(open(sys.argv[1]).read()))" "$file" > "$output"
+        done
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: _site
